@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="About.css">
+    <title> 4th From Classes </title>
+    <body> 
+        <center><header> Welcome To My 4th Form Classes </header></center>
+<nav class="form">
+<ul>
+    <li><a href="4Form.html">Home </a></li>
+    <li><a href="About.html">About Me </a></li>
+    <li><a href="Class4-1.html">My Class 4-1 </a></li>
+    <li><a href="Pictures.html">Pictures Of The Class </a></li>
+</ul>
+</nav>
+</main>
+<br>
+<br>
+
+<center><div 
+    class="Agri" style="max-width:500px">
+<center><img class="mySlides" src="Agri.jpg" style="width: 100%", sizes="200"></center>
+<center><img class="mySlides" src="Class 4-1.jpg" style="width: 100%",sizes="200"></center>
+<center><img class="mySlides" src="Class.jpg" style="width: 100%",sizes="200"></center>
+<center> <img class="mySlides" src="Teacher.jpg" style="width: 100%",sizes="200"></center>
+  </div></center>   
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides") ;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 1 seconds
+  }
+  </script>
+  
